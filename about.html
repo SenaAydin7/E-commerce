@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarPoster Shop About</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <h2>CarPoster Shop</h2>
+        <ul class="menu">
+          <li class="active" onclick="location.href='posters.html'" >Posters</li>
+          <li onclick="location.href='index.html'">Home</li>
+          <li>Gifts</li>
+          <li onclick="location.href='about.html'">About</li>
+        </ul>
+        <ul class="menu-icons">
+          <li><i class="bi bi-person" onclick="location.href='login.html'" transition="3s"></i></li>
+          <li class="favorit-icon" onclick="toggleModal1()"><i class="bi bi-heart" ></i></li>
+          <li class="basket-icon" onclick="toggleModal()"><i class="bi bi-basket"></i>
+          <span class="basket-count"></span>
+        </li>
+        </ul>
+      </nav>
+    
+    <div class="basket-modal">
+      <div class="basket-items">
+        <i class="bi bi-x" onclick="toggleModal()"></i>
+        <h2 class="basket-title">Your Items</h2>
+        <ul class="basket-list">
+          <li class="basket-item">No items added.</li>
+        </ul>
+        <div class="basket-total">
+          <span class="basket-total-price"></span>
+          <button class="btn-orange" onclick="location.href='checkout.html'" >CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="favorit-modal">
+      <div class="favorit-items">
+        <i class="bi bi-x" onclick="toggleModal1()"></i>
+        <h2 class="basket-title">Your Favorites</h2>
+        <ul class="favorit-list">
+          <li class="favorit-item">No items added.</li>
+        </ul>
+      </div>
+    </div>
+      
+      <section id="about">
+        <div class="about">
+            <div class="container">
+                <div class="about-title">
+                    
+                </div>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="./assets/images/posters/ferraribackgrey.jpg" alt="">
+                        <img src="./assets/images/posters/whitelambo.jpg" alt="">
+                    </div>
+                    <div class="about-text">
+                        <h1>CarPoster Shop</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati beatae ex omnis hic enim quisquam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem, nostrum alias ratione aliquam mollitia?</p>
+                        <h2>Ordering</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aliquid ab ipsum. Recusandae, in!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero possimus quo nesciunt modi ex odio qui distinctio quas beatae?</p>
+                        <h2>Shipping</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut repudiandae recusandae voluptates inventore cum ad <br>
+                            reiciendis ab vero? Obcaecati debitis vel earum odio, aperiam eum autem magni voluptatem. 
+                            Facere excepturi alias, rerum, ducimus ipsam quod esse ab molestiae blanditiis vel corrupti 
+                            omnis id accusantium ut, aut quam eos cupiditate magni voluptatibus velit officiis sapiente 
+                            eveniet dolore! Soluta velit, illum at natus reiciendis doloribus amet est nemo modi asperiores
+                             veniam dolorum ex accusantium assumenda id expedita suscipit rem nihil inventore neque 
+                             aspernatur possimus nulla tenetur. Incidunt, inventore doloremque voluptas eligendi debitis
+                              quibusdam reprehenderit! Distinctio error maiores non mollitia, eius cumque eaque.</p>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <div class="contact">
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="bi bi-person"></i> Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="bi bi-phone"></i> Phone No.</label>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email"><i class="bi bi-envelope"></i> Email Address</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message"><i class="bi bi-comments"></i> Your Message</label>
+            </div>
+            <button type="submit">SUBMIT <i class="bi bi-send"></i></button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <div class="footer">
+            <nav class="footer-item">
+                <ul>
+                    <li>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-meta"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    
+</body>
+    
+    <script type="text/javascript" src="./jsFiles/posters&about.js"></script>
+</html>

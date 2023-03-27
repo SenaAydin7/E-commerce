@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarPoster Shop</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/toastr/toastr.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="products.json"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2>CarPoster Shop</h2>
+      <ul class="menu">
+        <li class="active" onclick="location.href='posters.html'" >Posters</li>
+        <li onclick="location.href='index.html'">Home</li>
+        <li>Gifts</li>
+        <li onclick="location.href='about.html'">About</li>
+      </ul>
+      <ul class="menu-icons">
+        <li><i class="bi bi-person" onclick="location.href='login.html'" transition="3s"></i></li>
+        <li class="favorit-icon" onclick="toggleModal1()"><i class="bi bi-heart" ></i></li>
+        <li class="basket-icon" onclick="toggleModal()"><i class="bi bi-basket"></i>
+        <span class="basket-count"></span>
+      </li>
+      </ul>
+    </nav>
+    <section class="slider">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/slide1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slide2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slide3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="store my-5">
+      <div class="filter-background"></div>
+      <ul class="filter">
+        <li class="active">All</li>
+        <li>Car-Front</li>
+        <li>Car-Light</li>
+        <li>Wheels</li>
+      </ul>
+      <div class="row poster-list"></div>
+    </section>
+
+    <div class="basket-modal">
+      <div class="basket-items">
+        <i class="bi bi-x" onclick="toggleModal()"></i>
+        <h2 class="basket-title">Your Items</h2>
+        <ul class="basket-list">
+          <li class="basket-item">No items added.</li>
+        </ul>
+        <div class="basket-total">
+          <span class="basket-total-price"></span>
+          <button class="btn-orange" onclick="location.href='checkout.html'" >CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="favorit-modal">
+      <div class="favorit-items">
+        <i class="bi bi-x" onclick="toggleModal1()"></i>
+        <h2 class="basket-title">Your Favorites</h2>
+        <ul class="favorit-list">
+          <li class="favorit-item">No items added.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="footer">
+          <nav class="footer-item">
+              <ul>
+                  <li>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                      <a href="#"><i class="bi bi-meta"></i></a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </footer>
+
+  <button onclick="topFunction()" id="goup"><i class="bi bi-arrow-up"></i></button>
+
+
+    <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="./jsFiles/app.js"></script>
+    
+  </body>
+</html>

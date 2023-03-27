@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarPoster Shop Posters</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <h2>CarPoster Shop</h2>
+        <ul class="menu">
+          <li class="active" onclick="location.href='posters.html'" >Posters</li>
+          <li onclick="location.href='index.html'" >Home</li>
+          <li>Gifts</li>
+          <li onclick="location.href='about.html'">About</li>
+        </ul>
+        <ul class="menu-icons">
+          <li><i class="bi bi-person" onclick="location.href='login.html'" transition="3s"></i></li>
+          <li class="favorit-icon" onclick="toggleModal1()"><i class="bi bi-heart" ></i></li>
+          <li class="basket-icon" onclick="toggleModal()"><i class="bi bi-basket"></i>
+          <span class="basket-count"></span>
+        </li>
+        </ul>
+      </nav>
+
+      <div class="posterImg" id="gallery">
+        <img src="./assets/images/posters/bmwgrey.jpg" alt="" id="img">
+        <img src="./assets/images/posters/bmwback.jpg" alt="">
+        <img src="./assets/images/posters/porschefront.jpg" alt="">
+        <img src="./assets/images/posters/orangeporsche.jpg" alt="">
+        <img src="./assets/images/posters/redlight.jpg" alt="">
+        <img src="./assets/images/posters/audi.jpg" alt="">
+        <img src="./assets/images/posters/amgfront.jpg" alt="">
+        <img src="./assets/images/posters/audiwheel2.jpg" alt="">
+        <img src="./assets/images/posters/mustang.jpg" alt="">
+        <img src="./assets/images/posters/ferraribackgrey.jpg" alt="">
+        <img src="./assets/images/posters/nissan.jpg" alt="">
+        <img src="./assets/images/posters/whitelambo.jpg" alt="">
+        <img src="./assets/images/posters/ferrarilogo.jpg" alt="">
+      </div>
+
+      <div class="basket-modal">
+        <div class="basket-items">
+          <i class="bi bi-x" onclick="toggleModal()"></i>
+          <h2 class="basket-title">Your Items</h2>
+          <ul class="basket-list">
+            <li class="basket-item">No items added.</li>
+          </ul>
+          <div class="basket-total">
+            <span class="basket-total-price"></span>
+            <button class="btn-orange" onclick="location.href='checkout.html'" >CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="favorit-modal">
+        <div class="favorit-items">
+          <i class="bi bi-x" onclick="toggleModal1()"></i>
+          <h2 class="basket-title">Your Favorites</h2>
+          <ul class="favorit-list">
+            <li class="favorit-item">No items added.</li>
+          </ul>
+        </div>
+      </div>
+
+    <footer id="footer">
+        <div class="footer">
+            <nav class="footer-item">
+                <ul>
+                    <li>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-meta"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+  
+    <button onclick="topFunction()" id="goup"><i class="bi bi-arrow-up"></i></button>
+
+    <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./jsFiles/posters&about.js"></script>
+</body>
+</html>
