@@ -17,7 +17,7 @@ var request = {
     callbackUrl: 'https://www.merchant.com/callback',
     enabledInstallments: [2, 3, 6, 9],
     buyer: {
-        id: 'BY761',
+        id: '***',
         name: 'Sena',
         surname: 'Aydin',
         gsmNumber: '+905330000000',
@@ -25,24 +25,24 @@ var request = {
         identityNumber: '74300864791',
         lastLoginDate: '2022-08-15 12:43:35',
         registrationDate: '2021-04-21 15:12:09',
-        registrationAddress: 'Otrahisar, Fatih Mah. Ayasofya Cad. No:4',
+        registrationAddress: 'address',
         ip: '85.34.78.112',
-        city: 'Trabzon',
+        city: 'city',
         country: 'Turkey',
         zipCode: '34732'
     },
     shippingAddress: {
         contactName: 'Sena Aydin',
-        city: 'Trabzon',
+        city: 'city',
         country: 'Turkey',
-        address: 'Otrahisar, Fatih Mah. Ayasofya Cad. No:4',
+        address: 'address',
         zipCode: '34742'
     },
     billingAddress: {
         contactName: 'Sena Aydin',
-        city: 'Trabzon',
+        city: 'city',
         country: 'Turkey',
-        address: 'Otrahisar, Fatih Mah. Ayasofya Cad. No:4',
+        address: 'address',
         zipCode: '34742'
     },
     basketItems: [
